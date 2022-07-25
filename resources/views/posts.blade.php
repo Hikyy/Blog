@@ -14,7 +14,6 @@
                 </a>
             </div>
 
-            {{ddd($posts);}}
 
             <div class="mt-8 md:mt-0">
                 <a href="/" class="text-xs font-bold uppercase">Home Page</a>
@@ -27,7 +26,7 @@
 
 
 
-        <x-layout/>
+        <x-layout :posts="$posts[0]" />
 
         <footer class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
             <img src="./images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">
